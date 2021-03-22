@@ -1,7 +1,7 @@
 {
   "name": "typora-open",
-  "displayName": "Typora open",
-  "description": "open markdown files in Typora",
+  "displayName": "Typora Open",
+  "description": "open current markdown file in Typora",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.54.0"
@@ -29,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^4.14.1",
     "@typescript-eslint/parser": "^4.14.1",
     "eslint": "^7.19.0",
+    "file-loader": "^6.2.0",
     "glob": "^7.1.6",
     "gylint": "^0.4.4",
     "mocha": "^8.2.1",
@@ -38,7 +39,7 @@
     "webpack": "^5.19.0",
     "webpack-cli": "^4.4.0"
   },
-  "publisher": "GY",
+  "publisher": "whosydd",
   "license": "MIT",
   "activationEvents": [
     "onCommand:typora.open",
@@ -50,7 +51,11 @@
         "command": "typora.open",
         "title": "Open in Typora",
         "category": "Typora",
-        "when": "editorLangId == markdown"
+        "when": "editorLangId == markdown",
+        "icon": {
+          "dark": "dist/typora.svg",
+          "light": "dist/typora.svg"
+        }
       }
     ],
     "menus": {
@@ -61,17 +66,18 @@
           "when": "editorLangId == markdown"
         }
       ],
-      "explorer/context": [
+      "editor/title": [
         {
           "command": "typora.open",
           "group": "navigation",
-          "when": "resourceLangId == markdown"
+          "when": "editorLangId == markdown"
         }
       ]
     }
   },
   "repository": {
-    "type": "git",
-    "url": "git@github.com:whosydd/typora-open.git"
-  }
+    "type": "HTTPS",
+    "url": "https://github.com/whosydd/typora-open.git"
+  },
+  "icon": "dist/typora.png"
 }
