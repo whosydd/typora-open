@@ -76,7 +76,7 @@
     }
   },
   "repository": {
-    "type": "HTTPS",
+    "type": "git",
     "url": "https://github.com/whosydd/typora-open.git"
   },
   "icon": "dist/typora.png"
