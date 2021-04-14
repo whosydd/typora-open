@@ -14,6 +14,19 @@ Open current markdown file in Typora
 
 <br>
 
+
+
+## Config
+
+```json
+// Toggle whether to display the title bar icon
+"typora-open.showIconInEditorTitleMenu": true // default
+```
+
+
+
+<br>
+
 ## Requirements
 
 ### Windows

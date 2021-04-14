@@ -2,7 +2,7 @@
   "name": "typora-open",
   "displayName": "Typora Open",
   "description": "open current markdown file in Typora",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -70,9 +70,21 @@
         {
           "command": "typora.open",
           "group": "navigation",
-          "when": "editorLangId == markdown"
+          "when": "editorLangId == markdown && config.typora-open.showIconInEditorTitleMenu"
         }
       ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Typora Open configuration",
+      "properties": {
+        "typora-open.showIconInEditorTitleMenu": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to show icon in editor title menu.",
+          "scope": "resource"
+        }
+      }
     }
   },
   "repository": {
