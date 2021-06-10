@@ -4,17 +4,21 @@
 
 ## Usage
 
-- `command: Open in Typora`
+### command: Open in Typora
 
-  ![command](https://i.loli.net/2021/06/11/eAX8wNsHR7Pb52y.gif)
+![command](https://i.loli.net/2021/06/11/eAX8wNsHR7Pb52y.gif)
 
-- `editor titlebar button`
+### editor titlebar button
 
-  ![title](https://i.loli.net/2021/06/11/PQnsBZ4e9jTSkDC.gif)
+![title](https://i.loli.net/2021/06/11/PQnsBZ4e9jTSkDC.gif)
 
-- `context menu`
+### editor
 
-  ![explorer](https://i.loli.net/2021/06/11/8kI91lqW7uHcNTE.gif)
+![editor](https://i.loli.net/2021/06/11/IjXrWxPzGAdVmUb.gif)
+
+### explorer context menu
+
+![explorer](https://i.loli.net/2021/06/11/8kI91lqW7uHcNTE.gif)
 
 ## Config
 
@@ -30,7 +34,7 @@
 
 ### Windows
 
-只需要将`typora安装目录`添加到**系统变量**，即可通过 `typora README.md` 打开md文件
+只需要将`typora安装目录`添加到**系统变量**，即可通过 `typora README.md` 打开 md 文件
 
 ### macOS
 
@@ -50,4 +54,3 @@ alias typora="open -a typora"
 currently not support macOS or Linux
 
 > <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
