@@ -1,45 +1,15 @@
 {
   "name": "typora-open",
   "displayName": "Typora Open",
-  "description": "open current markdown file in Typora",
-  "version": "0.1.2",
+  "description": "open markdown file in Typora",
+  "version": "1.0.0",
   "engines": {
-    "vscode": "^1.54.0"
+    "vscode": "^1.46.0"
   },
   "categories": [
     "Other"
   ],
-  "main": "./dist/extension.js",
-  "scripts": {
-    "vsce package": "vsce package",
-    "vscode:prepublish": "npm run package",
-    "compile": "webpack",
-    "watch": "webpack --watch",
-    "package": "webpack --mode production --devtool hidden-source-map",
-    "test-compile": "tsc -p ./",
-    "test-watch": "tsc -watch -p ./",
-    "pretest": "npm run test-compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/glob": "^7.1.3",
-    "@types/mocha": "^8.0.4",
-    "@types/node": "^12.11.7",
-    "@types/vscode": "^1.54.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.1",
-    "@typescript-eslint/parser": "^4.14.1",
-    "eslint": "^7.19.0",
-    "file-loader": "^6.2.0",
-    "glob": "^7.1.6",
-    "gylint": "^0.4.4",
-    "mocha": "^8.2.1",
-    "ts-loader": "^8.0.14",
-    "typescript": "^4.1.3",
-    "vscode-test": "^1.5.0",
-    "webpack": "^5.19.0",
-    "webpack-cli": "^4.4.0"
-  },
+  "main": "./extension.js",
   "publisher": "whosydd",
   "license": "MIT",
   "activationEvents": [
@@ -54,8 +24,8 @@
         "category": "Typora",
         "when": "editorLangId == markdown",
         "icon": {
-          "dark": "dist/typora.svg",
-          "light": "dist/typora.svg"
+          "dark": "assets/typora.svg",
+          "light": "assets/typora.svg"
         }
       }
     ],
@@ -63,6 +33,7 @@
       "explorer/context": [
         {
           "command": "typora.open",
+          "when": "filesExplorerFocus && resourceLangId == markdown",
           "group": "navigation"
         }
       ],
@@ -94,9 +65,25 @@
       }
     }
   },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.46.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/whosydd/typora-open.git"
   },
-  "icon": "dist/typora.png"
+  "icon": "assets/typora.png"
 }
