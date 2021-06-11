@@ -2,7 +2,7 @@
   "name": "typora-open",
   "displayName": "Typora Open",
   "description": "open markdown file in Typora",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.46.0"
   },
@@ -23,10 +23,7 @@
         "title": "Open in Typora",
         "category": "Typora",
         "when": "editorLangId == markdown",
-        "icon": {
-          "dark": "assets/typora.svg",
-          "light": "assets/typora.svg"
-        }
+        "icon": "$(markdown)"
       }
     ],
     "menus": {

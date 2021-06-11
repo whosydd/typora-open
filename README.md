@@ -10,7 +10,7 @@
 
 ### editor titlebar button
 
-![title](https://i.loli.net/2021/06/11/PQnsBZ4e9jTSkDC.gif)
+![title](https://i.loli.net/2021/06/11/NLTkOfme174MW3r.gif)
 
 ### editor
 
