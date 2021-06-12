@@ -2,6 +2,10 @@
 
 All notable changes to the "typora-open" extension will be documented in this file.
 
+## [1.0.2]
+
+- 优化代码
+
 ## [1.0.1]
 
 - 更改标题栏图标为 vscode 自带 markdown 图标

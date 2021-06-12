@@ -1,8 +1,8 @@
 {
   "name": "typora-open",
   "displayName": "Typora Open",
-  "description": "open markdown file in Typora",
-  "version": "1.0.1",
+  "description": "Open markdown file in Typora",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.46.0"
   },
@@ -82,5 +82,8 @@
     "type": "git",
     "url": "https://github.com/whosydd/typora-open.git"
   },
-  "icon": "assets/typora.png"
+  "icon": "assets/typora.png",
+  "keywords": [
+    "Typora"
+  ]
 }
