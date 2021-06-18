@@ -2,6 +2,10 @@
 
 All notable changes to the "typora-open" extension will be documented in this file.
 
+## [1.0.3]
+
+- 更新 vscode 版本支持为 1.57.0 以上
+
 ## [1.0.2]
 
 - 优化代码
