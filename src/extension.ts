@@ -1,9 +1,7 @@
-const vscode = require('vscode')
+import * as vscode from 'vscode'
 
-/**
- * @param {vscode.ExtensionContext} context
- */
-function activate(context) {
+export function activate(context: vscode.ExtensionContext) {
+  // 创建终端
   const terminal = vscode.window.createTerminal({
     name: 'Typora',
     hideFromUser: true,
@@ -35,9 +33,4 @@ function activate(context) {
 }
 
 // this method is called when your extension is deactivated
-function deactivate() {}
-
-module.exports = {
-  activate,
-  deactivate,
-}
+export function deactivate() {}

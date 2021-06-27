@@ -2,6 +2,10 @@
 
 All notable changes to the "typora-open" extension will be documented in this file.
 
+## [1.1.0]
+
+- 使用 typescript 重新构建代码
+
 ## [1.0.3]
 
 - 更新 vscode 版本支持为 1.57.0 以上
