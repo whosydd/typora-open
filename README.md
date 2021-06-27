@@ -1,70 +1,56 @@
-# typora-open-ts README
+# Typora Open
 
-This is the README for your extension "typora-open-ts". After writing up a brief description, we recommend including the following sections.
+**Open markdown file in Typora**
 
-## Features
+## Usage
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### command: Open in Typora
 
-For example if there is an image subfolder under your extension project workspace:
+![command](https://i.loli.net/2021/06/11/eAX8wNsHR7Pb52y.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+### editor titlebar button
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![title](https://i.loli.net/2021/06/11/NLTkOfme174MW3r.gif)
+
+### editor
+
+![editor](https://i.loli.net/2021/06/11/IjXrWxPzGAdVmUb.gif)
+
+### explorer context menu
+
+![explorer](https://i.loli.net/2021/06/11/8kI91lqW7uHcNTE.gif)
+
+## Config
+
+```json
+// 切换是否显示标题栏的图标
+// Toggle whether to display the title bar icon
+"typora-open.showIconInEditorTitleMenu": true // default
+```
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### [**Use Typora from Shell or Cmd**](https://support.typora.io/Use-Typora-From-Shell-or-cmd/)
 
-## Extension Settings
+### Windows
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+只需要将`typora安装目录`添加到**系统变量**，即可通过 `typora README.md` 打开 md 文件
 
-For example:
+### macOS
 
-This extension contributes the following settings:
+```bash
+# 将如下命令添加到 .bash_profile(bash) 或 .zprofile(zsh) 文件中：
+alias typora="open -a typora"
+```
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+### Linux
 
-## Known Issues
+**After [installing Typora on Linux](https://support.typora.io/Typora-on-Linux/), you can run `typora` directly in terminal**
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+<br>
 
-## Release Notes
+<br>
 
-Users appreciate release notes as you update your extension.
 
-### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+> <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

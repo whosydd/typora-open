@@ -1,25 +1,35 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode'
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-  // Use the console to output diagnostic information (console.log) and errors (console.error)
-  // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "typora-open-ts" is now active!')
-
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with registerCommand
-  // The commandId parameter must match the command field in package.json
-  let disposable = vscode.commands.registerCommand('typora-open-ts.helloWorld', () => {
-    // The code you place here will be executed every time your command is executed
-
-    // Display a message box to the user
-    vscode.window.showInformationMessage('Hello World from typora-open-ts!')
+  // 创建终端
+  const terminal = vscode.window.createTerminal({
+    name: 'Typora',
+    hideFromUser: true,
+  })
+  const typoraOpen = vscode.commands.registerCommand('typora.open', async file => {
+    let final
+    if (file === undefined) {
+      const fileList = await vscode.workspace.findFiles('**/*.md', '**/node_modules/**')
+      const path = await vscode.window.showQuickPick(fileList.map(file => file.fsPath))
+      final = path
+    } else {
+      final = file.fsPath
+    }
+    if (final === undefined) {
+      return
+    } else {
+      if (final.includes(' ')) {
+        final = `"${final}"`
+      }
+      try {
+        terminal.sendText(`typora ${final}`)
+      } catch (err) {
+        vscode.window.showInformationMessage(`Failed to open file: ${final} in Typora!`)
+      }
+    }
   })
 
-  context.subscriptions.push(disposable)
+  context.subscriptions.push(typoraOpen)
 }
 
 // this method is called when your extension is deactivated
