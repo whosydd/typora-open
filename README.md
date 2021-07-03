@@ -6,19 +6,19 @@
 
 ### command: Open in Typora
 
-![command](https://i.loli.net/2021/06/11/eAX8wNsHR7Pb52y.gif)
+![](https://raw.githubusercontent.com/whosydd/images-in-one/main/20210704000707.gif)
 
 ### editor titlebar button
 
-![title](https://i.loli.net/2021/06/11/NLTkOfme174MW3r.gif)
+![](https://raw.githubusercontent.com/whosydd/images-in-one/main/20210704000718.gif)
 
 ### editor
 
-![editor](https://i.loli.net/2021/06/11/IjXrWxPzGAdVmUb.gif)
+![](https://raw.githubusercontent.com/whosydd/images-in-one/main/20210704000710.gif)
 
 ### explorer context menu
 
-![explorer](https://i.loli.net/2021/06/11/8kI91lqW7uHcNTE.gif)
+![](https://raw.githubusercontent.com/whosydd/images-in-one/main/20210704000711.gif)
 
 ## Config
 

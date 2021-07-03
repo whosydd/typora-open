@@ -2,6 +2,10 @@
 
 All notable changes to the "typora-open" extension will be documented in this file.
 
+## [1.1.1]
+
+- 更换 README.md 使用的图床
+
 ## [1.1.0]
 
 - 使用 typescript 重新构建代码
