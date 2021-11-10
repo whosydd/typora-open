@@ -18,11 +18,11 @@ export function activate(context: vscode.ExtensionContext) {
     if (final === undefined) {
       return
     } else {
-      if (final.includes(' ')) {
-        final = `"${final}"`
-      }
+      // if (final.includes(' ')) {
+      //   final = `"${final}"`
+      // }
       try {
-        terminal.sendText(`typora ${final}`)
+        terminal.sendText(`typora "${final}"`)
       } catch (err) {
         vscode.window.showInformationMessage(`Failed to open file: ${final} in Typora!`)
       }

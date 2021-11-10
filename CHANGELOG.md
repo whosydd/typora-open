@@ -2,6 +2,10 @@
 
 All notable changes to the "typora-open" extension will be documented in this file.
 
+## [1.1.2]
+
+- 修复 bug：在 windows 中使用`git bash`时正常打开文件
+
 ## [1.1.1]
 
 - 更换 README.md 使用的图床
